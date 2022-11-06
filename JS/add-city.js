@@ -2,8 +2,7 @@ async function agregarlocalstorage(){
     let { getCitiesFromLocalStorage, llamada_api } = await import ("./common.js");
     let cities = getCitiesFromLocalStorage();
     let veri = document.getElementById("entrada").value;
-    let apis = (await llamada_api(veri)).cod;
-    console.log("hola");
+    let apis = (await llamada_api(veri)).cod
     if(cities.includes(veri)){
         document.getElementById("cartel").innerHTML="La ciudad ingresada ya se encuentra almacenada";
         document.getElementById("cartel").style.background= "#ffc107";

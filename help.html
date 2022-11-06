@@ -34,25 +34,22 @@
                 href="https://openweathermap.org/api" target="_blank">OpenWeatherMap.</a> </p>
         <p>Para poder consultar el clima, primero deberá <a href="./add-city.html">Agregar una ciudad</a> y luego
             seleccionar la Ciudad en cuestión desde la página <a href=".\index.html">Clima.</a> </p>
-        
+
 
         <section id="form-city-list" class="cuadros">
-            <form action="">
-                <p><label for="Text">Nombre:</label> 
-                    <br>
-                    <input type="text" class="text" style="width: 255px;height: 32px;"></p>
-                <p><label for="mail">Email:</label>
-                    <br>
-                    <input type="email" required class="email" style="width: 255px;height: 32px;"></p>
-                <p><label for="comentario">Mensaje:</label>
-                    <br>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10" class="mensaje" ></textarea>
-                </p>
+            <form id="formulario_ayuda">
+                Nombre: <br><input class="texto" type="text"> <br />
+                Email: <br><input class="texto" type="email" id="email"> <br />
+                Mensaje: <br><textarea name="Mensaje" rows="12" cols="30"></textarea> <br />
+                <div id="center">
 
-                    <input type="reset" value="Limpiar" class="limpiar">
-                    <button class="enviar">Enviar</button>
-                    <p class="error">Ingrese un <b>Email</b> válido </p><br>
-                
+                    <input class="botones" type="button" value="Limpiar" onclick="LimpiarFormulario()"></input>
+
+                    <input class="botones" type="button" value="Enviar" onclick="EnviarFormulario()"></input>
+                </div>
+                <br>
+                <br>
+                <p id="Emailerror" style="display: none;">Ingrese un Email valido</p>
             </form>
             <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
