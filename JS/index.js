@@ -31,3 +31,8 @@ async function Consultar() {
         document.getElementById("p5").innerHTML = `Presión: ${objeto.main.pressure} P`;
     }
 }
+function vacio() {
+    if(cities.length == 0){
+        confirm("ERROR: No hay ciudades cargadas");
+    }
+}
