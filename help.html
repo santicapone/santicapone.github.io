@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="Img/clima.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP LC2 - TP Integrador</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="CSS/Pages/help.css">
+    <script src="JS/help.js" defer></script>
+    <script src="JS/common.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="Img/clima.png" alt="clima" width="150px" height="85px">
+            <span>Clima App</span>
+        </h1>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-item"><a href=".\index.html">Clima</a></li>
+                <li class="nav-item"><a href="./add-city.html">Agregar ciudad</a></li>
+                <li class="current-page"><a href="./help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>Ayuda Clima App v.1.0</h2>
+        <p> Esta App te permite consultar el clima de una ciudad en particular utilizando la API de <a
+                href="https://openweathermap.org/api" target="_blank">OpenWeatherMap.</a> </p>
+        <p>Para poder consultar el clima, primero deberá <a href="./add-city.html">Agregar una ciudad</a> y luego
+            seleccionar la Ciudad en cuestión desde la página <a href=".\index.html">Clima.</a> </p>
+        
+
+        <section id="form-city-list" class="cuadros">
+            <form action="">
+                <p><label for="Text">Nombre:</label> 
+                    <br>
+                    <input type="text" class="text" style="width: 255px;height: 32px;"></p>
+                <p><label for="mail">Email:</label>
+                    <br>
+                    <input type="email" required class="email" style="width: 255px;height: 32px;"></p>
+                <p><label for="comentario">Mensaje:</label>
+                    <br>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10" class="mensaje" ></textarea>
+                </p>
+
+                    <input type="reset" value="Limpiar" class="limpiar">
+                    <button class="enviar">Enviar</button>
+                    <p class="error">Ingrese un <b>Email</b> válido </p><br>
+                
+            </form>
+            <!-- Sección donde se debe colocar el formulario, con el select y el
+botón de consultar -->
+        </section>
+        <section id="section-weather-result">
+            <!-- Sección donde se debe mostrar el clima de la ciudad -->
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+</html>
